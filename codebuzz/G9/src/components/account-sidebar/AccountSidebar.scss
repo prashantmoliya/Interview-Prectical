@@ -1,0 +1,46 @@
+@import "../../css/variables.scss";
+
+.account_sidebar {
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        display: grid;
+        gap: 20px;
+
+        li {
+            a {
+                display: flex;
+                align-items: center;
+
+                border: 1px solid $color4;
+                border-radius: 10px;
+                padding: 17px 25px;
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $color5;
+
+                img {
+                    margin-right: 15px;
+                    transition: filter 0.3s ease;
+
+                }
+
+                &.active {
+                    color: $black;
+                    border: 1px solid $black;
+
+                    img {
+                        // filter: brightness(0) saturate(100%);
+                    }
+                }
+            }
+        }
+    }
+}

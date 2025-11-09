@@ -1,0 +1,133 @@
+@import "../../css/variables.scss";
+
+// ------ Blogs Start ------
+.blogs {
+    padding-block: 80px;
+
+    .blogs_top_content {
+        margin-bottom: 40px;
+
+        h6 {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $black;
+        }
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-block: 10px;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color5;
+        }
+
+        .blogs_group {
+            background-color: $bg-color;
+            gap: 10px;
+            outline: 1.5px solid $color11; // theme-group-border theme-toggle-border
+            border-radius: 75px;
+            padding: 7px 13px;
+
+            .blogs-toggle {
+                background-color: $color14;
+                color: $black;
+                border: none;
+                border-radius: 75px;
+                padding: 10px 35px;
+                font-family: $times;
+                font-weight: 700;
+                font-size: 22px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $chatbot-title;
+                    color: $color7;
+                }
+
+                &.active {
+                    background-color: $chatbot-title;
+                    color: $color7;
+                }
+            }
+        }
+    }
+
+    .blog_box {
+        .image {
+            overflow: hidden;
+            border-radius: 16px;
+
+            width: 100%;
+            height: 320px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                // object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+
+        .detail {
+            margin-top: 20px;
+
+            .name {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 20px;
+                color: $black;
+            }
+
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                color: $color5 !important;
+                margin-block: 10px 20px;
+
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                /* limit to 3 lines */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                strong,
+                span {
+                    color: $color5 !important;
+                }
+            }
+
+            .read_more {
+                width: fit-content;
+                height: fit-content;
+                background-color: $color8;
+                padding: 16px 68px;
+            }
+        }
+
+        &.nodata {
+            .name {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+// ------ Blogs End ------

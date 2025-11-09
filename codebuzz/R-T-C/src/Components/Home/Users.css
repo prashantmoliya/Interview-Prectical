@@ -1,0 +1,21 @@
+/* -- Home/ User -- */
+
+.card {
+  margin: 50px 0 0;
+}
+
+table {
+  margin: 20px auto;
+}
+
+.form {
+  margin: 60px auto;
+  width: 50%;
+}
+
+table,
+tr,
+th,
+td {
+  /* border: 1px solid black;  */
+}

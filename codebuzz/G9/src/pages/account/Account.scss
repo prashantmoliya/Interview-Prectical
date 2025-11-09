@@ -1,0 +1,394 @@
+@import "../../css/variables.scss";
+
+// ------ Account Start ------
+.account {
+    padding-block: 80px;
+
+    .page_menu {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $black;
+
+        margin-bottom: 40px;
+
+        span {
+            font-family: $avenir;
+            font-weight: 700;
+        }
+    }
+
+    .account_overview {
+        padding-left: 36px;
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 20px;
+
+            &.wishlist {
+                margin-bottom: 30px;
+            }
+        }
+
+        .details {
+            border: 1px solid $color4;
+            border-radius: 16px;
+
+            padding: 40px;
+
+            // My-Account
+            .user_info {
+                .name {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $black;
+                }
+
+                .email,
+                .phone {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+                .email {
+                    margin-block: 5px;
+                }
+
+                button {
+                    background: none;
+                    border: none;
+                }
+            }
+
+            .line {
+                border: 1px solid $color4;
+                margin-block: 40px;
+            }
+
+            .user_address {
+                .title {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $black;
+
+                    &:last-of-type {
+                        margin-block: 5px;
+                    }
+                }
+
+                p {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $black;
+                }
+            }
+
+            // My-Orders & Product-Saved
+            .order_box {
+                .image {
+                    position: relative;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 175px;
+                    max-width: 175px;
+                    max-height: 175px;
+
+                    .ribbon {
+                        position: absolute;
+                        top: 21px;
+                        left: -60px;
+                        padding: 5px 60px;
+                        background-color: $main-btn-color;
+                        color: $color7;
+                        font-family: $times;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        white-space: nowrap;
+                        transform: rotate(-45deg);
+                        z-index: 2;
+                    }
+                    
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .order_detail {
+                    padding-left: 20px;
+
+                    .id {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: $black;
+
+                        span {
+                            font-family: $avenir;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .name,
+                    .price {
+                        font-family: $times;
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: $black;
+                        margin-block: 5px;
+
+                        &.p {
+                            margin-block: 0;
+                        }
+                    }
+
+                    .name {
+                        font-size: 20px;
+                        margin-bottom: 17px;
+
+                        &.p {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .price {
+                        font-size: 30px;
+
+                        &.p {
+                            font-size: 32px;
+                        }
+                    }
+
+                    p {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $color5;
+                        line-height: 26px;
+                        margin-block: 15px;
+                    }
+
+                    .order_btn {
+                        width: fit-content;
+                        height: fit-content;
+                        padding-inline: 27px;
+                    }
+
+                    .order_option {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        button {
+                            background: none;
+                            border: none;
+
+                            font-family: $avenir;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: $black;
+
+                            &:disabled {
+                                opacity: 0.3;
+                                cursor: not-allowed;
+                            }
+                        }
+
+                        .line_option {
+                            background-color: $color5;
+                            width: 1px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+            // Address
+            .address {
+
+                .type,
+                p {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $black;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+
+                .status {
+                    padding: 5px 16px;
+                }
+
+                .menu_btn {
+                    background: none;
+                    border: 0;
+                }
+
+                .dropdown-menu {
+                    // inset: 3px 0 auto auto !important;
+                    border: 0;
+
+                    background-color: $color6;
+                    padding-block: 15px;
+
+                    .dropdown-item {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $black;
+                        padding-inline: 18px;
+
+                        &:active,
+                        &.active {
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        // My-Orders
+        .order_filter {
+            margin-block: 28px;
+            gap: 50px;
+
+            .filter_btn {
+                background-color: transparent;
+                border: 0;
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $color5;
+                padding-bottom: 5px;
+
+                &.active {
+                    color: $theme-toggle-border;
+                    box-shadow: 0 2px 0 0 $theme-toggle-border;
+                }
+            }
+        }
+
+        // Address
+        .address_btn {
+            height: fit-content;
+            margin-top: 40px;
+            padding-block: 16px;
+            font-size: 20px;
+        }
+
+        // Wishlist
+        .wishlist_box {
+            .image {
+                position: relative;
+                overflow: hidden;
+                border-radius: 16px;
+                width: 100%;
+                height: 350px;
+
+                .ribbon {
+                    position: absolute;
+                    top: 30px;
+                    left: -51px;
+                    padding: 5px 60px;
+                    background-color: $main-btn-color;
+                    color: $color7;
+                    font-family: $times;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: center;
+                    white-space: nowrap;
+                    transform: rotate(-45deg);
+                    z-index: 2;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.5s ease;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .wishlist_detail {
+                margin-top: 10px;
+
+                .rating {}
+
+                .like {
+                    button {
+                        background: none;
+                        border: 0;
+                    }
+                }
+
+                .name,
+                .price {
+                    font-family: $times;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+                .name {
+                    // margin-top: 8px;
+                }
+
+                .price {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: $color5;
+                    padding-block: 10px;
+                }
+            }
+
+            &.nodata {
+                border: 1px solid var(--color4);
+                border-radius: 16px;
+                padding: 40px;
+            }
+        }
+
+    }
+}
+
+// ------ Account End ------
+
+
+
+[data-theme="dark"] {
+    .dropdown-item {
+        &:hover {
+            color: $white !important;
+        }
+    }
+}

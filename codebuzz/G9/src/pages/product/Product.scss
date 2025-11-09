@@ -1,0 +1,484 @@
+@import "../../css/variables.scss";
+
+// ------ Product Start ------
+.product {
+    padding-block: 80px;
+
+    .product_top {
+        margin-bottom: 40px;
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color5;
+        }
+
+        .filtering_area {
+            .sorting {
+                .form-control {
+                    width: fit-content;
+                    height: 100%;
+                    background-color: $input-bg;
+                    font-family: $avenir;
+                    border: $border;
+                    border-radius: 6px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                    padding: 15px 22px;
+                }
+
+                .menu_btn {
+                    width: max-content;
+                    max-width: 100%;
+                    height: 100%;
+                    background-color: $input-bg;
+                    font-family: $avenir;
+                    border: 1px solid $color15;
+                    border-radius: 6px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                    padding: 15px 22px;
+                }
+
+                .dropdown-menu {
+                    // inset: 3px 0 auto auto !important;
+                    border: 0;
+
+                    background-color: $color6;
+                    padding-block: 15px;
+
+                    .dropdown-item {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $black;
+                        padding-inline: 18px;
+
+                        &:active,
+                        &.active {
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+            }
+
+            .searching {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                border: 1px solid $color15;
+                border-radius: 6px;
+                overflow: hidden;
+                width: 100%;
+                max-width: 500px;
+
+                input {
+                    background-color: $bg-color;
+                    border: none;
+                    outline: none;
+                    padding: 15px 22px;
+                    font-family: $avenir;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                    width: 100%;
+                    height: 100%;
+
+                    &::placeholder {
+                        color: var(--placeholder);
+                    }
+                }
+
+                .search_btn {
+                    background-color: $main-btn-color;
+                    border: none;
+
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $color7;
+                    padding: 15px 37px;
+                    height: 100%;
+                }
+            }
+
+            .view_grid {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $black;
+                }
+
+                .grid_btns {
+                    display: flex;
+                    gap: 10px;
+                    padding-left: 20px;
+
+                    .grid_btn {
+                        background: none;
+                        border: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .product_list {
+        .filter_area {
+            border: 1px solid $form-shadow;
+            border-radius: 16px;
+            padding: 20px;
+
+            .mb-40 {
+                margin-bottom: 40px;
+            }
+
+            .title {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 20px;
+                color: $black;
+                margin-bottom: 10px;
+            }
+
+            button {
+                background: none;
+                border: none;
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+
+                &:disabled {
+                    opacity: 0.7;
+                    cursor: not-allowed;
+                }
+            }
+
+            .pricing {
+                .custom-track {
+                    margin-block: 20px 22px;
+
+                    .custom-thumb {}
+                }
+
+                .price_control {
+
+                    .counter {
+                        border: 1px solid $color-5;
+                        border-radius: 6px;
+
+                        span {
+                            font-family: $avenir;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: $black;
+                            padding: 0 12px;
+                        }
+
+                        .d-grid {
+                            border-left: 1px solid $color-5;
+
+                            button {
+                                padding: 8px;
+                                font-size: 0;
+
+                                img {
+                                    width: 8px;
+                                    height: 4px;
+                                }
+
+                                &:first-child {
+                                    border-bottom: 1px solid $color-5;
+                                }
+
+                                &:disabled {
+                                    opacity: 0.7;
+                                    cursor: not-allowed;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pricing_btn {
+                    width: fit-content;
+                    height: fit-content;
+                    border: 1px solid $color-5; // color-5 border-color
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    margin-top: 10px;
+                }
+            }
+
+
+            ul {
+                li {
+                    .custom-checkbox {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+
+                        border: 1px solid $color9;
+                        border-radius: 10px;
+                        padding: 14px 16px;
+                        margin-bottom: 15px;
+
+                        span {
+                            font-family: $avenir;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $black;
+                        }
+
+                        .form-check-input {
+                            background-color: $input-bg;
+                            border: 1px solid $color9;
+                            border-radius: .25em;
+                            width: 22px;
+                            height: 22px;
+                            margin-top: 0;
+
+                            &:checked {
+                                // background-color: $input-bg;
+                                border-color: $theme-toggle-border;
+                                --bs-form-check-bg-image: url("../../assets/images/product/checked-light.svg");
+                                background-size: 13px;
+                            }
+                        }
+
+                        &:has(.form-check-input:checked) {
+                            border-color: $theme-toggle-border;
+
+                            span {
+                                color: $theme-toggle-border;
+                            }
+                        }
+                    }
+
+                    &:last-of-type .custom-checkbox {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .accordion {
+                --bs-accordion-bg: $bg-color;
+
+                .accordion-item {
+                    border: none;
+
+                    .accordion-header {
+                        .accordion-button {
+                            padding: 0;
+                            box-shadow: none;
+
+                            &:after {
+                                background-image: none;
+                                width: 0;
+                                height: 0;
+                            }
+                        }
+                    }
+
+                    .accordion-body {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .product_area {
+            .product_box {
+                .image {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 16px;
+
+                    width: 100%;
+                    height: 350px;
+
+                    .ribbon {
+                        position: absolute;
+                        top: 30px;
+                        left: -51px;
+                        padding: 5px 60px;
+                        background-color: $main-btn-color;
+                        color: $color7;
+                        font-family: $times;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        white-space: nowrap;
+                        transform: rotate(-45deg);
+                        z-index: 2;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.5s ease;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .detail {
+                    margin-top: 10px;
+
+                    .name {
+                        font-family: $times;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: $black;
+                        cursor: pointer;
+                    }
+
+                    .like {
+                        button {
+                            background: none;
+                            border: none;
+                        }
+                    }
+
+                    .price {
+                        font-family: $times;
+                        font-weight: 700;
+                        font-size: 32px;
+                        color: $black;
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+
+        .product_list_area {
+            border: 1px solid $color4;
+            border-radius: 16px;
+            padding: 40px;
+
+            .product_box {
+                .image {
+                    position: relative;
+
+                    border-radius: 16px;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 180px;
+                    max-width: 180px;
+                    max-height: 180px;
+
+                    .ribbon {
+                        position: absolute;
+                        top: 21px;
+                        left: -60px;
+                        padding: 5px 60px;
+                        background-color: $main-btn-color;
+                        color: $color7;
+                        font-family: $times;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-align: center;
+                        white-space: nowrap;
+                        transform: rotate(-45deg);
+                        z-index: 2;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.5s ease;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .detail {
+                    padding-left: 20px;
+
+                    .name,
+                    .price {
+                        font-family: $times;
+                        font-weight: 700;
+                        color: $black;
+                    }
+
+                    .name {
+                        font-size: 22px;
+                        cursor: pointer;
+                    }
+
+                    .price {
+                        font-size: 32px;
+                        margin-block: 5px 10px;
+                    }
+
+                    .like {
+                        button {
+                            background: none;
+                            border: none;
+                        }
+                    }
+
+                    p {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        color: $color5;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+
+            .line {
+                border: 1px solid $color4;
+                margin-block: 40px;
+            }
+        }
+    }
+}
+
+// ------ Product End ------
+
+
+
+
+[data-theme="dark"] {
+    ul {
+        li {
+            .form-check-input {
+                &:checked {
+                    --bs-form-check-bg-image: url("../../assets/images/product/checked-dark.svg") !important;
+                }
+            }
+        }
+    }
+}

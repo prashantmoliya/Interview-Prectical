@@ -1,0 +1,181 @@
+@import "../../../css/variables.scss";
+
+// ------ Order-Details Start ------
+.order_details {
+    margin-block: 80px;
+
+    .page_menu {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $black;
+        margin-bottom: 40px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .order_detail_info {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: $black;
+        }
+
+        .pdf_btn {
+            background: none;
+            border: none;
+        }
+
+        .status {
+            font-size: 22px;
+            padding: 10px 28px;
+        }
+    }
+
+    .lines {
+        margin-block: 40px;
+    }
+
+    .products_detail_info {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        .order_box {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .image {
+                border-radius: 10px;
+                overflow: hidden;
+                width: 100%;
+                height: 180px;
+                max-width: 180px;
+                max-height: 180px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .order_detail {
+                padding-left: 20px;
+
+                .name,
+                .total_price {
+                    font-family: $times;
+                    font-weight: 700;
+                    font-size: 22px;
+                    color: $black;
+                }
+
+                .total_price {
+                    font-size: 30px;
+                }
+
+                .qty,
+                .price {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+                .qty {
+                    margin-block: 10px;
+                }
+            }
+        }
+    }
+
+    .payment_detail_info {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        .price_list {
+            .mb-13 {
+                margin-bottom: 13px;
+            }
+
+            .name,
+            .price {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $color5;
+            }
+
+
+            .coupon {
+                .price {
+                    color: $delivered;
+                }
+            }
+
+            .total {
+
+                .name,
+                .price {
+                    font-weight: 700;
+                    font-size: 22px;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .shipping_detail {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        .title,
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
+
+// ------ Order-Details End ------

@@ -1,0 +1,46 @@
+@import "../../css/variables.scss";
+
+// ------ Order-Placed Start ------
+.order_placed {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 0;
+
+        a {
+            color: $black;
+
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .order_placed_image{
+        margin-block: 40px;
+    }
+
+    .back_to_home {
+        width: fit-content;
+        height: fit-content;
+        padding: 16px 68px;
+        margin-top: 60px;
+    }
+}
+
+// ------ Order-Placed End ------

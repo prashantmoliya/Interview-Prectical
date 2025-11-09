@@ -1,0 +1,328 @@
+@import "../../css/variables.scss";
+
+// ------ About-Us-Banner Start ------
+.about_us {
+    padding-top: 80px;
+    background: $gradient-color1;
+
+    .about_cointent {
+        h6 {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $black;
+        }
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-block: 10px;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color5;
+            line-height: 26px;
+            margin-bottom: 20px;
+
+            b {
+                color: $black;
+            }
+        }
+    }
+}
+
+// ------ About-Us-Banner End ------
+
+
+
+// ------ Vision&Mission Start ------
+.vision_mission {
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color5;
+        line-height: 26px;
+        margin-block: 10px 40px;
+    }
+
+    .vision_mission_detail {
+        border: 1px solid $color4;
+        border-radius: 16px;
+        padding: 40px;
+
+        h3 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color5;
+        }
+    }
+}
+
+// ------ Vision&Mission End ------
+
+
+
+// ------ Directors&Founders Start ------
+.directors_founders {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color5;
+        line-height: 26px;
+        margin-block: 10px 40px;
+
+        b {
+            color: $black;
+        }
+    }
+
+    .founders_box {
+        .image {
+            overflow: hidden;
+            border-radius: 16px;
+
+            img {
+                width: 100%;
+                transition: transform 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .detail {
+            .name {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 30px;
+                color: $black;
+                margin-block: 20px 5px;
+            }
+
+            .role {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $color5;
+            }
+        }
+    }
+
+}
+
+// ------ Directors&Founders End ------
+
+
+
+// ------ Brand Start ------
+.brand {
+    padding-block: 80px;
+    background-color: $color1;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 20px;
+
+        b {
+            color: $black;
+        }
+
+
+        &.lh {
+            line-height: 34px;
+        }
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            list-style: disc;
+
+            &::marker {
+                color: $color5;
+            }
+        }
+    }
+}
+
+// ------ Brand End ------
+
+
+
+// ------ Products&Collection Start ------
+.products_collection {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 20px;
+
+        b {
+            color: $black;
+        }
+    }
+
+    .row {
+        padding-block: 40px;
+
+        .products_collection_detail {
+            border: 1px solid $color4;
+            border-radius: 16px;
+            padding: 40px;
+
+            h5,
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+            }
+
+            h5 {
+                color: $black;
+            }
+
+            p {
+                color: $color5;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .order_now {
+        width: fit-content;
+        height: fit-content;
+        padding: 16px 68px;
+    }
+}
+
+// ------ Products&Collection End ------
+
+
+
+// ------ Customer-Experience Start ------
+.customer_experience {
+    margin-top: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 20px;
+
+        b {
+            color: $black;
+        }
+    }
+}
+
+// ------ Customer-Experience End ------
+
+
+
+// ------ Future-Vision Start ------
+.future_vision {
+    margin-bottom: 80px;
+
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            list-style: disc;
+
+            &::marker {
+                color: $color5;
+            }
+        }
+    }
+}
+
+// ------ Future-Vision End ------

@@ -1,0 +1,48 @@
+/* -- Home/ User -- */
+.card {
+	margin: 50px 0 0;
+}
+
+table {
+	margin: 20px auto;
+}
+
+.form {
+	margin: 60px auto;
+	width: 50%;
+}
+
+
+
+.dark-mode {
+	.card {
+		background-color: #000;
+		border-color: rgba(255, 254, 254, 0.55);
+
+		.card-header {
+			border-bottom-color: rgba(255, 254, 254, 0.55);
+
+			h2{
+				color: #fff;
+			}
+		}
+
+		.card-body {
+			table {
+				--bs-table-bg: #000;
+				--bs-table-color: #fff;
+				border-color: rgba(255, 254, 254, 0.55);
+
+
+				.checkbox {
+					background-color: #000 !important;
+					border-color: #fff !important; 
+					&:checked {
+						background-color: #000 !important;
+						border-color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@import "../../css/variables.scss";
+
+.paginate {
+    .navigation {
+        .pagination {
+            gap: 10px !important;
+
+            .page-item {
+                .page-link {
+                    background-color: $bg-color;
+                    border-radius: 5px;
+                    border: 1px solid $color15;
+                    box-shadow: none;
+                    cursor: pointer;
+                    padding: 7px 14px;
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $black;
+                }
+
+                &.active {
+                    .page-link {
+                        background-color: $black;
+                        border: 1px solid $black;
+                        color: $white;
+                    }
+                }
+
+                &.disabled {
+                    .page-link {
+                        opacity: 0.6;
+                        cursor: not-allowed;
+                        pointer-events: auto
+                    }
+                }
+            }
+        }
+    }
+}

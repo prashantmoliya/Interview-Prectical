@@ -1,0 +1,136 @@
+@import "../../../css/variables.scss";
+
+.modal {
+    --bs-modal-width: 575px;
+
+    .modal-content {
+        background-color: $color7;
+        padding: 55px 35px;
+        border-radius: 16px;
+
+        .modal-body {
+            padding: 0;
+
+            h4 {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 30px;
+                color: $black;
+            }
+
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $black;
+                margin-block: 10px 20px;
+            }
+
+            .main_btn {
+                width: fit-content;
+                height: fit-content;
+                padding: 14px 60px;
+                font-size: 20px;
+
+                &.no {
+                    background-color: $color7;
+                    color: $theme-toggle-border;
+                    outline: 1px solid $main-btn-color;
+                }
+            }
+        }
+
+        // ------ Choose-Address ------
+
+        .btn-close {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        form {
+            margin-top: 20px;
+
+            .address {
+                border-bottom: 1px solid $color4;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                cursor: pointer;
+
+                .title,
+                p {
+                    font-family: $avenir;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+                .title {
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-weight: 400;
+                    line-height: 26px;
+                    margin-block: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            // .lines {
+            //     margin-block: 18px;
+            // }
+        }
+
+        // ------ Share ------
+
+        form {
+            &.share {
+                .address {
+                    padding: 0;
+                    border: 0;
+                    margin-bottom: 20px;
+
+                    p {
+                        &.link {
+                            word-break: break-word;
+                            white-space: pre-wrap;
+                            flex: 1;
+                            font-size: 17px;
+                        }
+                    }
+
+                    button {
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    gap: 23px;
+
+                    button {
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+[data-theme="dark"] {
+    .btn-close {
+        --bs-btn-close-bg: url("../../../assets/images/modal/modal-close-dark.svg");
+    }
+}

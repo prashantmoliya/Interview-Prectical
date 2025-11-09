@@ -1,0 +1,151 @@
+@import "../../../../css/variables.scss";
+
+// ------ Create-Address Start ------
+.create_address {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    .address_form {
+        border: 1px solid $color4;
+        border-radius: 16px;
+
+        padding: 40px;
+
+        form {
+            .mb-4 {
+                // margin-bottom: 25px !important;
+            }
+
+            .form-label {
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+                margin-bottom: 0.7rem;
+            }
+
+            .form-control {
+                background-color: $input-bg;
+                font-family: $avenir;
+                border: $border;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+                padding: 10px 16px;
+
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+
+            .form-check {
+                .form-check-input {
+                    background-color: $input-bg;
+                    border: $border;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 2px;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:checked {
+                        border-color: $main-btn-color;
+                        --bs-form-check-bg-image: none !important;
+
+                        &::before {
+                            display: block;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        width: 12px;
+                        height: 12px;
+                        background-color: $main-btn-color;
+                        border-radius: 50%;
+                        display: none;
+                    }
+                }
+
+                .form-check-label {
+                    font-family: $avenir;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            // Edit Account
+            .profile_image_container {
+                position: relative;
+                background-color: $color11;
+                padding: 8px;
+                border-radius: 50%;
+                width: 155px;
+                height: 155px;
+                margin: auto;
+
+
+                .profile_image {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .name_initials {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color12;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+
+                    span {
+                        font-family: $avenir;
+                        font-weight: 700;
+                        font-size: 51.63px;
+                        color: $color7;
+                    }
+                }
+
+                .camera {
+                    position: absolute;
+                    background-color: $color13;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 50%;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .address_btn {
+            height: fit-content;
+            margin-top: 40px;
+            padding-block: 16px;
+            font-size: 20px;
+        }
+    }
+}
+
+// ------ Create-Address End ------

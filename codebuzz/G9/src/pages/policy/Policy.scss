@@ -1,0 +1,82 @@
+@import "../../css/variables.scss";
+
+// ------ Policy Start ------
+.policy {
+    padding-block: 80px;
+
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+
+    .mb-10 {
+        margin-bottom: 10px;
+    }
+
+    .mb-60 {
+        margin-bottom: 60px;
+    }
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color5;
+        margin-bottom: 20px;
+
+        &.black,
+        b {
+            color: $black;
+        }
+
+        a {
+            color: $color5;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    ul,ol {
+        padding-left: 20px;
+
+        li {
+            list-style: disc;
+
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color5;
+            margin-bottom: 10px;
+
+            p {
+                margin-bottom: 10px;
+
+            }
+
+            &:last-child {
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &::marker {
+                color: $color5;
+            }
+        }
+    }
+}
+
+// ------ Policy End ------

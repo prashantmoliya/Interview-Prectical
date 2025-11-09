@@ -1,0 +1,85 @@
+
+// ------ Contact-Us Start ------
+@import "../../css/variables.scss";
+.contact_us {
+    padding-block: 80px;
+
+    .contact_content {
+        h6 {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $black;
+        }
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-block: 10px;
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color5;
+            line-height: 26px;
+            margin-block: 20px;
+
+            a {
+                color: $color5;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .lines {
+            margin-block: 40px;
+        }
+    }
+
+    .contact_form {
+        border: 1px solid $color4;
+        border-radius: 16px;
+
+        padding: 40px;
+
+        form {
+            .form-label {
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+                margin-bottom: 0.7rem;
+            }
+
+            .form-control {
+                background-color: $input-bg;
+                font-family: $avenir;
+                border: $border;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+                padding: 10px 16px;
+
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+        }
+
+        .contact_btn {
+            height: fit-content;
+            margin-top: 40px;
+            padding-block: 16px;
+            font-size: 20px;
+        }
+    }
+}
+// ------ Contact-Us End ------

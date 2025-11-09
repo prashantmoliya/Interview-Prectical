@@ -1,0 +1,516 @@
+@import "../../css/variables.scss";
+
+// ------ Home-Banner Start ------
+.home_banner {
+    .bannerSwiper {
+        .banner_slide {
+            .banner_img {
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 650px;
+                    max-height: 100%;
+
+                    img {
+                        // min-height: 500px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+
+                .content {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+
+                    h2 {
+                        font-family: $times;
+                        font-weight: 700;
+                        font-size: 50px;
+                        color: $white1;
+                    }
+
+                    p {
+                        font-family: $avenir;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: $white1;
+                        margin-block: 20px 40px;
+                    }
+
+                    .shop_now {
+                        width: fit-content;
+                        height: fit-content;
+                        background-color: $black1;
+                        color: $white1;
+                        padding: 16px 60px;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            background-color: $white1;
+            border-radius: 100%;
+            border: 1px solid $white1;
+            // z-index: 3;
+            transition: all 0.5s ease;
+
+            &::after {
+                content: "";
+                background-image: url("../../assets/images/home/left_arrow.svg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 17px;
+            }
+
+            &:hover {
+                border: 1.5px solid $color-1;
+                background-color: $color-1;
+
+                &::after {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+        }
+
+        .swiper-button-prev {
+            left: 50px;
+        }
+
+        .swiper-button-next {
+            right: 50px;
+
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 20px;
+
+            .swiper-pagination-bullet {
+                background-color: $color-1;
+                width: 10px;
+                height: 10px;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: $white1;
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $white1;
+                }
+            }
+        }
+    }
+}
+
+// ------ Home-Banner End ------
+
+
+
+// ------ Top-Collection Start ------
+.top_collection {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+    }
+
+    .frame {
+        margin-block: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color5;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    .image_collection {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .content_collection {
+            position: absolute;
+            inset: 0;
+            background-color: $color-2; // dark overlay
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 100px;
+                border: 1px solid $color-3;
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+
+            span {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                color: $white1;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1); // zoom effect
+            }
+
+            .content_collection {
+                opacity: 1;
+
+                &::before {
+                    inset: 20px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// ------ Top-Collection End ------
+
+
+
+// ------ Fancy-Slider Start -----
+.fancy_slider {
+    padding-block: 30px;
+    background-color: $black;
+
+    .fancySwiper {
+        .fancy_slider_box {
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 26px;
+                color: $bg-color;
+            }
+        }
+    }
+}
+
+// ------ Fancy-Slider End ------
+
+
+
+// ------ Customize-Jewellery Start -----
+.customize_jewellery {
+    padding-block: 80px;
+    position: relative;
+
+    .diamond {
+        content: "";
+        position: absolute;
+
+        &.d1 {
+            top: 20%;
+            left: 15%;
+        }
+
+        &.d2 {
+            bottom: 24%;
+            left: 42%;
+        }
+
+        &.d3 {
+            top: 12%;
+            right: 19%;
+        }
+    }
+
+    .customize_cointent {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+
+            span {
+                font-family: $times;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color5;
+            line-height: 26px;
+            margin-block: 20px 40px;
+        }
+
+        .customize_order_now {
+            width: fit-content;
+            height: fit-content;
+            background-color: $color8;
+            padding: 16px 70px;
+        }
+    }
+}
+
+// ------ Customize-Jewellery End ------
+
+
+
+// ------ About-G9Jewellery Start -----
+.about_jewellery {
+    padding-top: 80px;
+    background: $gradient-color1;
+
+    .about_cointent {
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+
+            span {
+                font-family: $times;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color5;
+            line-height: 26px;
+            margin-block: 20px;
+
+            b {
+                color: $black;
+            }
+
+            a {
+                font-size: 17px;
+                text-decoration: underline;
+                color: $black;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .read_more {
+            width: fit-content;
+            height: fit-content;
+            background-color: $color8;
+            padding: 16px 68px;
+            margin-top: 20px;
+        }
+    }
+}
+
+// ------ About-G9Jewellery End ------
+
+
+
+// ------ Top-Selling-Products Start -----
+.top_selling_products {
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+    }
+
+    .frame {
+        margin-block: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color5;
+        line-height: 26px;
+        margin-bottom: 40px;
+
+        max-width: 80%;
+        margin-inline: auto;
+    }
+
+    .product_box {
+        .image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+
+            width: 100%;
+            height: 350px;
+
+            .ribbon {
+                position: absolute;
+                top: 30px;
+                left: -51px;
+                padding: 5px 60px;
+                background-color: $main-btn-color;
+                color: $color7;
+                font-family: $times;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                white-space: nowrap;
+                transform: rotate(-45deg);
+                z-index: 2;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .detail {
+            margin-top: 10px;
+
+            .name {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 20px;
+                color: $black;
+                cursor: pointer;
+            }
+
+            .like {
+                button {
+                    background: none;
+                    border: none;
+                }
+            }
+
+            .price {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 32px;
+                color: $black;
+                margin-top: 7px;
+            }
+        }
+    }
+
+    .view_more {
+        width: fit-content;
+        height: fit-content;
+        background-color: $color8;
+        padding: 16px 68px;
+        margin-top: 40px;
+        margin-inline: auto;
+        display: block;
+    }
+}
+
+// ------ Top-Selling-Products End ------
+
+
+
+// ------ Get-In-Touch Start ------
+.get_in_touch {
+    margin-bottom: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+    }
+
+    .frame {
+        margin-block: 20px;
+    }
+
+    p {
+        font-family: $avenir;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color5;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    .contact_detail {
+        border: 1px solid $color4;
+        border-radius: 16px;
+        padding: 30px;
+
+        .image {
+            img {}
+        }
+
+        .title,
+        p,
+        a {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .title {
+            color: $black;
+            margin-top: 40px;
+        }
+
+        p {
+            color: $color5;
+            margin-block: 10px 20px;
+        }
+
+        a {
+            color: $black;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// ------ Get-In-Touch End ------

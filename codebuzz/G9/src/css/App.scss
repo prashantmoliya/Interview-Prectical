@@ -1,0 +1,198 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    scroll-behavior: smooth;
+    // overflow-x: hidden;
+    height: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control,
+.form-select,
+.form-check-input {
+    box-shadow: none !important;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("../assets/images/selected-light.svg");
+
+    option {
+        color: $black !important;
+        background-color: $input-bg !important;
+
+    }
+}
+
+[data-theme="dark"] {
+    .form-select {
+        --bs-form-select-bg-img: url("../assets/images/selected-dark.svg");
+
+        option {
+            background-color: #00000003 !important;
+        }
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.spinner-border-sm {
+    width: 18px;
+    height: 18px;
+}
+
+.error_message {
+    font-family: $dm-sans;
+    font-weight: 400;
+    color: $black;
+    font-size: 15px;
+    color: $error-color;
+}
+
+/* ------ Main-Button ------ */
+.main_btn {
+    background-color: $main-btn-color;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+
+    font-family: $times;
+    font-weight: 700;
+    font-size: 18px; //20px
+    color: $color7;
+
+    padding-block: 10px;
+    height: 49px;
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+}
+
+
+/* ------ Theme-Css ------ */
+
+body {
+    background-color: $bg-color;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ------ ThemeToggle ------ */
+.theme_group {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+    gap: 10px;
+    background-color: $color2;
+    outline: 1px solid $theme-toggle-border; // theme-group-border theme-toggle-border
+    border-radius: 75px;
+    padding: 7px 13px;
+
+    .theme-toggle {
+        // position: fixed;
+        // bottom: 50px;
+        // left: 50px;
+        background-color: $color4;
+        color: $white1;
+        // border: 2px solid $theme-toggle-border;
+        border: none;
+        border-radius: 75px;
+        padding: 10px 20px;
+        font-family: $times;
+        font-weight: 700;
+        font-size: 22px;
+        // width: 50px;
+        // height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // z-index: 999;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $chatbot-title;
+            color: $color7;
+        }
+
+        &.active {
+            background-color: $chatbot-title;
+            color: $color7;
+        }
+    }
+}
+
+
+
+
+/* ------ Padding-Inline ------ */
+.pd-x {
+    padding-inline: 200px;
+
+    @media (max-width: 1399px) {
+        padding-inline: 120px;
+    }
+
+    @media (max-width: 1299px) {
+        padding-inline: 100px;
+    }
+
+    @media (max-width: 1199px) {
+        padding-inline: 80px;
+    }
+
+    @media (max-width: 1099px) {
+        padding-inline: 60px;
+    }
+}
+
+
+/* ------ Status ------ */
+.status {
+    border-radius: 6px;
+    font-family: $times;
+    font-weight: 700;
+    font-size: 16px;
+    color: $white1;
+    padding: 8px 20px;
+
+    &.pending {
+        background-color: $pending;
+    }
+
+    &.delivered {
+        background-color: $delivered;
+    }
+
+    &.cancelled {
+        background-color: $cancelled;
+    }
+}
+
+
+/* ------ Lines ------ */
+.lines {
+    margin: 80px 200px;
+    border: 1px solid $color4;
+}

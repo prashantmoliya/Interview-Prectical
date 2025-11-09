@@ -1,0 +1,172 @@
+@import "../../css/variables.scss";
+
+// ------ Cart Start ------
+.checkout {
+    padding-block: 80px;
+
+    .checkout_top {
+
+        .page_menu,
+        p {
+            font-family: $avenir;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .page_menu {
+            color: $black;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        h4 {
+            font-family: $times;
+            font-weight: 700;
+            font-size: 30px;
+            color: $black;
+            margin-block: 40px 20px;
+        }
+
+        p {
+            line-height: 26px;
+            color: $color5;
+            margin-bottom: 40px;
+        }
+    }
+
+    .checkout_area {
+        form {
+            .address {
+                .title {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $black;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: $black;
+                }
+
+                .choose_another_address {
+                    margin-block: 40px;
+                    height: fit-content;
+                    padding-block: 16px;
+                    background-color: $color7;
+                    color: $theme-toggle-border;
+                    outline: 1px solid $theme-toggle-border;
+                }
+            }
+
+            h4 {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 30px;
+                color: $black;
+            }
+
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                color: $color5;
+                margin-block: 20px;
+            }
+
+            .form-label {
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+                margin-bottom: 0.7rem;
+            }
+
+            .form-control {
+                background-color: $input-bg;
+                font-family: $avenir;
+                border: $border;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+                padding: 10px 16px;
+
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+        }
+
+        .order_summary {
+            background-color: $color1;
+            border-radius: 16px;
+            padding: 40px;
+            margin-left: 20px   ;
+
+            h4 {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 30px;
+                color: $black;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 18px;
+                color: $color5;
+                margin-bottom: 0;
+            }
+
+            .price_list {
+                margin-block: 30px;
+
+                .mb-15 {
+                    margin-block: 15px;
+                }
+
+                .name,
+                .price {
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $black;
+                }
+
+
+                .coupon {
+                    .price {
+                        color: $delivered;
+                    }
+                }
+
+                .total {
+
+                    .name,
+                    .price {
+                        font-weight: 700;
+                        font-size: 22px;
+                        color: $black;
+                    }
+                }
+            }
+
+            .pay_now {
+                height: fit-content;
+                padding-block: 16px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// ------ Cart End ------

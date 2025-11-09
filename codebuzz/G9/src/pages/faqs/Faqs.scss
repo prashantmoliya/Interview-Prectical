@@ -1,0 +1,58 @@
+@import "../../css/variables.scss";
+
+// ------ Faqs Start ------
+.faqs {
+    padding-block: 80px;
+
+    h4 {
+        font-family: $times;
+        font-weight: 700;
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 40px;
+    }
+
+    .accordion {
+        --bs-accordion-bg: $bg-color;
+
+        .accordion-item {
+            border: none;
+
+            .accordion-header {
+                .accordion-button {
+                    background: none;
+                    box-shadow: none;
+                    padding-inline: 0;
+                    font-family: $avenir;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $black;
+
+                    &:after {
+                        // background-image: url("../");
+                    }
+                }
+            }
+
+            .accordion-body {
+                font-family: $avenir;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                color: $color5;
+                max-width: 95%;
+                padding-top: 0;
+                padding-inline: 0;
+            }
+        }
+    }
+}
+
+// ------ Faqs End ------
+
+
+[data-theme="dark"] {
+    .accordion-button:not(.collapsed)::after{
+        
+    }
+}

@@ -1,0 +1,274 @@
+@import "../../css/variables.scss";
+
+// ------ Authentication ------
+
+.authentication {
+    height: 100%;
+    overflow-x: hidden;
+
+    &.sign_up {
+        height: auto;
+        padding-block: 60px;
+    }
+
+    &.otp {
+        form {
+            .top {
+                p {
+                    span {
+                        font-weight: 600;
+                        color: $main-btn-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .second {
+                .otp-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 25px;
+
+                    .form-control {
+                        max-width: 80px;
+                        text-align: center;
+
+                        font-weight: 600;
+                        font-size: 22px;
+
+                        &:focus,
+                        &.filled {
+                            // border: 1px solid $main-btn-color;
+                        }
+                    }
+                }
+
+                .resend {
+                    font-family: $dm-sans;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $black;
+
+                    .resend_btn {
+                        background: transparent;
+                        border: 0;
+
+                        font-weight: 700;
+                        color: $black;
+                        text-decoration: underline;
+
+                        transition: opacity 0.3s ease;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                        &:disabled {
+                            opacity: 0.6;
+                            cursor: not-allowed;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 4.5rem;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    form {
+        border: $border;
+        border-radius: 16px;
+        background-color: $form-bg;
+
+        // box-shadow: 2px 4px 15px 2px $form-shadow;
+
+        padding: 60px;
+
+        .top {
+            h2 {
+                font-family: $times;
+                font-weight: 700;
+                font-size: 30px; //28px
+                color: $black;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px; //16px
+                line-height: 26px;
+                color: $black;
+                margin-bottom: 0;
+            }
+        }
+
+        .second {
+            margin-top: 25px;
+
+            .form-label {
+                font-family: $avenir;
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+                margin-bottom: 0.2rem;
+            }
+
+            .form-control {
+                background-color: $input-bg;
+                font-family: $avenir;
+                border: $border;
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+                padding: 10px 16px;
+
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+
+            .form-check {
+                .form-check-input {
+                    background-color: $input-bg;
+                    border: $border;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 2px;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:checked {
+                        border-color: $main-btn-color;
+                        --bs-form-check-bg-image: none;
+
+                        &::before {
+                            display: block;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        width: 12px;
+                        height: 12px;
+                        background-color: $main-btn-color;
+                        border-radius: 50%;
+                        display: none;
+                    }
+                }
+
+                .form-check-label {
+                    font-family: $avenir;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+
+                .form-check-input:disabled+.form-check-label {
+                    cursor: auto;
+                }
+            }
+
+            .password_hide_show {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 0;
+                background-color: transparent;
+                z-index: 99;
+                cursor: pointer;
+            }
+
+            .auth_btn {
+                color: $color7;
+            }
+
+            .forgot-password {
+                a {
+                    font-family: $avenir;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $black;
+                }
+            }
+
+            .or {
+                margin-block: 25px;
+
+                span {
+                    border: $border;
+                    height: 1px;
+                    flex: 1;
+                }
+
+                p {
+                    font-family: $avenir;
+                    font-weight: 400;
+                    font-size: 18px; //20px
+                    color: $black;
+                    margin-inline: 20px;
+                    white-space: nowrap;
+
+                }
+            }
+
+            .google_btn {
+                font-family: $avenir;
+                background-color: $form-bg;
+                border: $border;
+
+                font-weight: 400;
+                color: $black;
+                margin-top: 25px;
+            }
+
+            .get_otp_btn {
+                font-family: $avenir;
+                background-color: $form-bg;
+                border: $border;
+
+                font-weight: 400;
+                color: $black;
+                // font-size: 20px;
+
+                &.mobile {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
+    .account_or {
+        margin-top: 30px;
+
+        font-family: $avenir;
+        font-weight: 400;
+        font-size: 18px; //20px
+        color: $black;
+
+        a {
+            color: $black;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// ------ Authentication ------
