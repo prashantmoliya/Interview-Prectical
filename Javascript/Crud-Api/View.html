@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    <!-- /* -- Crud -- */ -->
+    .card {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .btn-2{
+        margin-left: 46%;
+    }
+    #nodata{
+        text-align: center;
+    }
+    #delete-error{
+        color: red;
+        display: flex;
+        justify-content: center;
+        margin: -8px 0 8px;
+        font-weight: 600;
+    }
+</style>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <a href="add.html" class="btn btn-success btn-2">Add User [+]</a>
+        </div>
+        <div class="card-body">
+            <div id="delete-error"></div>
+            <table class="table table-bordered" id="nodata">
+                <tbody id="datashow">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>18</td>
+                        <td>Virat Kohli</td>
+                        <td>virat18@gmail.com</td>
+                        <td>2323cheeku</td>
+                        <td>9789056789</td>
+                        <td>
+                            <a href="Update.html" class="btn btn-primary">Edit</a>
+                            &nbsp; | &nbsp;
+                            <a class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr> -->
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- axios package link -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="View.js"></script>
+</body>
+</html>
