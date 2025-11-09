@@ -1,0 +1,12 @@
+export const REQUEST = "REQUEST";
+export const ERROR = "ERROR";
+
+export const USER_REGISTER_POST = "USER_REGISTER_POST";
+export const USER_REGISTER_GET = "USER_REGISTER_GET";
+export const USER_REGISTER_PUT = "USER_REGISTER_PUT";
+
+export const USER_LOGIN_POST = "USER_LOGIN_POST";
+export const USER_LOGIN_GET = "USER_LOGIN_GET";
+export const USER_LOGIN_PUT = "USER_LOGIN_PUT";
+
+export const USER_LOGOUT = "USER_LOGOUT";
